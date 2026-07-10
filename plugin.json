@@ -1,0 +1,143 @@
+{
+    "id": "com.karman.chatbubbles",
+    "name": "Chat Bubbles",
+    "description": "Telegram-style chat experience for Mattermost: bubbles, replies, forward, pinned bar, date chip, scroll button, favicon unread badge and more (web/desktop).",
+    "version": "1.11.1",
+    "homepage_url": "https://github.com/amir-zangiabadi/mattermost-plugin-chatbubbles",
+    "support_url": "https://github.com/amir-zangiabadi/mattermost-plugin-chatbubbles/issues",
+    "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+    },
+    "settings_schema": {
+        "header": "Chat Bubbles settings — Telegram-style chat experience",
+        "footer": "After changing settings, users must refresh their Mattermost page.",
+        "settings": [
+            {
+                "key": "EnableBubbles",
+                "display_name": "Enable chat bubbles",
+                "type": "bool",
+                "default": true,
+                "help_text": "Enable or disable the entire bubble chat mode."
+            },
+            {
+                "key": "OnlyDirectAndGroup",
+                "display_name": "Only in DMs and group messages",
+                "type": "bool",
+                "default": false,
+                "help_text": "When enabled, bubbles are shown only in direct and group messages, not in channels."
+            },
+            {
+                "key": "MyBubbleColor",
+                "display_name": "My bubble color",
+                "type": "text",
+                "default": "auto",
+                "help_text": "Bubble color for your own messages. auto = follow the theme; or a hex color like #effdde."
+            },
+            {
+                "key": "TheirBubbleColor",
+                "display_name": "Their bubble color",
+                "type": "text",
+                "default": "auto",
+                "help_text": "Bubble color for received messages. auto = follow the theme."
+            },
+            {
+                "key": "TextColor",
+                "display_name": "Bubble text color",
+                "type": "text",
+                "default": "auto",
+                "help_text": "Text color inside bubbles. auto = follow the theme."
+            },
+            {
+                "key": "MaxWidthPercent",
+                "display_name": "Max bubble width (%)",
+                "type": "number",
+                "default": 70,
+                "help_text": "Maximum bubble width as a percentage (30 to 95)."
+            },
+            {
+                "key": "HideMyAvatar",
+                "display_name": "Hide my avatar",
+                "type": "bool",
+                "default": true,
+                "help_text": "Hide the avatar on your own messages (like Telegram)."
+            },
+            {
+                "key": "TelegramReply",
+                "display_name": "Telegram-style reply",
+                "type": "bool",
+                "default": true,
+                "help_text": "Reply with a non-editable preview bar above the message box, like Telegram."
+            },
+            {
+                "key": "TimeInBubble",
+                "display_name": "Time inside bubble",
+                "type": "bool",
+                "default": true,
+                "help_text": "Show the send time in the bottom corner of the bubble next to the read ticks (like Telegram)."
+            },
+            {
+                "key": "PinnedBar",
+                "display_name": "Pinned message bar",
+                "type": "bool",
+                "default": true,
+                "help_text": "Show the latest pinned message in a bar at the top of the chat; click to jump to it, or unpin with the × button."
+            },
+            {
+                "key": "DateChip",
+                "display_name": "Floating date chip",
+                "type": "bool",
+                "default": true,
+                "help_text": "Show a floating date label while scrolling (Today / Yesterday / date)."
+            },
+            {
+                "key": "ScrollButton",
+                "display_name": "Scroll-to-bottom button",
+                "type": "bool",
+                "default": true,
+                "help_text": "Round scroll-to-bottom button with a new-message counter."
+            },
+            {
+                "key": "DblClickReply",
+                "display_name": "Double-click to reply",
+                "type": "bool",
+                "default": true,
+                "help_text": "Double-clicking any message opens the Telegram-style reply (without opening the thread panel)."
+            },
+            {
+                "key": "ForwardButton",
+                "display_name": "Forward button",
+                "type": "bool",
+                "default": true,
+                "help_text": "Forward button in the message hover menu + destination chat picker + a 'Forwarded from' header."
+            },
+            {
+                "key": "BubbleTail",
+                "display_name": "Bubble tail",
+                "type": "bool",
+                "default": true,
+                "help_text": "Small tail on the bottom corner of bubbles, like Telegram."
+            },
+            {
+                "key": "MessageSounds",
+                "display_name": "Message sounds",
+                "type": "bool",
+                "default": true,
+                "help_text": "Subtle sound when sending and receiving messages in the open chat (like Telegram)."
+            },
+            {
+                "key": "MessageFontSize",
+                "display_name": "Message font size (px)",
+                "type": "number",
+                "default": 0,
+                "help_text": "Font size of message text in pixels (10 to 28). 0 = theme default. For example 16 or 18 for larger, Telegram-like text."
+            },
+            {
+                "key": "FaviconBadge",
+                "display_name": "Unread badge on browser tab",
+                "type": "bool",
+                "default": true,
+                "help_text": "Show the total unread-message count as a red circle on the browser tab icon (like Telegram Web). Muted channels only contribute their mentions."
+            }
+        ]
+    }
+}

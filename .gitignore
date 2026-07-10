@@ -1,0 +1,11 @@
+# Build output (root only — do NOT ignore webapp/dist, it is committed)
+/build/
+/dist/
+*.tar.gz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
