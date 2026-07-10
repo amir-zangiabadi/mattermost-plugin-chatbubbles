@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+dist/
+*.tar.gz
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (not required, but just in case)
+node_modules/
